@@ -32,7 +32,7 @@ func NewClient(rt http.RoundTripper) *http.Client {
 // NewClientFromConfig returns a new HTTP client configured for the
 // given config.HTTPClientConfig.
 func NewClientFromConfig(cfg config.HTTPClientConfig) (*http.Client, error) {
-	return NewClientFromConfigAndOptions(cfg, true)
+	return NewClientFromConfigAndOptions(cfg, false)
 }
 
 // NewClientFromConfigAndOptions returns a new HTTP client configured for the
